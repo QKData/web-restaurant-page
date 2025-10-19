@@ -1,4 +1,4 @@
-import { home } from "./home";
+import { createHome } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
 
@@ -26,7 +26,7 @@ function switchTab(tabName) {
 }
 
 function loadHome() {
-    content.innerHTML = home;
+    content.appendChild(createHome());
 }
 
 function loadMenu() {
