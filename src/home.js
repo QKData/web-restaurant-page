@@ -1,0 +1,1 @@
+export const home = "<h1>Welcome to Our Restaurant</h1>";

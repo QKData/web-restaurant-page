@@ -1,0 +1,1 @@
+export const menu = "<h1>Our Menu</h1>";
