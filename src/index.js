@@ -1,6 +1,7 @@
 import { createHome } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
+import "./styles.css";
 
 const content = document.getElementById("content");
 const homeBtn = document.querySelector("nav button:nth-child(1)");
