@@ -1,6 +1,7 @@
-import { home } from "./home";
-import { menu } from "./menu";
+import { createHome } from "./home";
+import { createMenu } from "./menu";
 import { contact } from "./contact";
+import "./styles.css";
 
 const content = document.getElementById("content");
 const homeBtn = document.querySelector("nav button:nth-child(1)");
@@ -26,11 +27,11 @@ function switchTab(tabName) {
 }
 
 function loadHome() {
-    content.innerHTML = home;
+    content.appendChild(createHome());
 }
 
 function loadMenu() {
-    content.innerHTML = menu;
+    content.appendChild(createMenu());
 }
 
 function loadContact() {
