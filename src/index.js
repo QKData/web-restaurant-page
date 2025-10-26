@@ -1,5 +1,5 @@
 import { createHome } from "./home";
-import { menu } from "./menu";
+import { createMenu } from "./menu";
 import { contact } from "./contact";
 import "./styles.css";
 
@@ -31,7 +31,7 @@ function loadHome() {
 }
 
 function loadMenu() {
-    content.innerHTML = menu;
+    content.appendChild(createMenu());
 }
 
 function loadContact() {
