@@ -1,6 +1,6 @@
 import { createHome } from "./home";
 import { createMenu } from "./menu";
-import { contact } from "./contact";
+import { contact, createContact } from "./contact";
 import "./styles.css";
 
 const content = document.getElementById("content");
@@ -35,7 +35,7 @@ function loadMenu() {
 }
 
 function loadContact() {
-    content.innerHTML = contact;
+    content.appendChild(createContact());
 }
 
 homeBtn.addEventListener("click", () => switchTab("home"));
