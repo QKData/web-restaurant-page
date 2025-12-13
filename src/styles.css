@@ -18,6 +18,10 @@ body {
     max-width: min(50vw, 60rem);
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
